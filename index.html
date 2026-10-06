@@ -68,13 +68,15 @@
         var analyticsId = null;
         var canonicalDomain = null;
 
-        // Configuración por dominio
+        // Configuración por dominio (Property ID unificado: 545984807)
         if (hostname.indexOf('esteponabarbers.com') !== -1) {
-          analyticsId = '529027322';
+          analyticsId = '545984807';
           canonicalDomain = 'https://esteponabarbers.com';
         } else if (hostname.indexOf('esteponarestaurants.com') !== -1) {
-          analyticsId = '527696324';
+          analyticsId = '545984807';
           canonicalDomain = 'https://esteponarestaurants.com';
+        } else {
+          analyticsId = '545984807';
         }
 
         // 1. Etiqueta Canonical Dinámica para evitar penalización de Google por contenido duplicado
@@ -119,8 +121,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special_Elite&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="./assets/index.js?v=1790712507404"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index.css?v=1790712507404">
+    <script type="module" crossorigin src="./assets/index.js?v=1791298268556"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index.css?v=1791298268556">
   </head>
   <body class="bg-[#f5eedc] text-[#2c241c] antialiased">
     <div id="root"></div>
